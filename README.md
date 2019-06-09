@@ -3,9 +3,9 @@
 Ever wanted to display latex expressions in your Readme file on GitHub? Just writing the latex code within dollar signs won't get you there as MathJax is not included on Github and no rendering is done server-side. There are a couple of workarounds for that issue
 
 * Embed images that are part of the repository
-* Use sites [codecogs](https://www.codecogs.com/latex/eqneditor.php) to request a rendered image of the equation you want to display
+* Use sites like [codecogs](https://www.codecogs.com/latex/eqneditor.php) to request a rendered image of the equation you want to display
 
-Both approaches have their downsides however. The former one is cumbersome can be a mess if you have a lot of equations. The latter one lacks customization abilities and you need to rely on an external website to work.
+Both approaches have their downsides however. The former one is cumbersome and can be a mess if you have a lot of equations. The latter one lacks customization abilities and you need to rely on an external website to work.
 
 This script helps you with generating images from Latex code within the Readme file.
 
@@ -33,8 +33,6 @@ python github-mathdown.py README.md images
 This section contains some math to showcase the script. You can of course use inline expressions like <sub><sub><img alt="f(x)=\sqrt{x}" src="images/6997be4488be02684eb23d24f349fbbe.svg" /></sub></sub> for <sub><sub><img alt="x\in\mathbb{R}^+\cup \{0\}" src="images/3a31536c100bfcf33d5debda42dd81dd.svg" /></sub></sub>. The script also correctly detects double dollar signs correctly as display elements, like so: 
 
 <p align="center"><img alt="\int_\epsilon^1 f(x) {\rm d}\! x > 0." src="images/8b7acbd820d65969e1fa2742d0b29654.svg" /></p>
-
-
 
 ## Possible issues
 
